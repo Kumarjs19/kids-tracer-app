@@ -8,7 +8,7 @@ data class UserProgress(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val letterOrNumberId: Int,
-    val type: String, // "letter" or "number"
+    val type: TracingType,
     val isCompleted: Boolean = false,
     val accuracy: Float = 0f, // 0-100%
     val attempts: Int = 0,
